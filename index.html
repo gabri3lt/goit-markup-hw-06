@@ -440,7 +440,10 @@
       <div class="foot_wrapper">
         <ul class="address">
           <h2>
-            <a class="studio_foot" href="/index.html" target="_self"
+            <a
+              class="studio_foot"
+              href="https://gabri3lt.github.io/goit-markup-hw-06/index.html"
+              target="_self"
               ><span class="logo">Web</span>Studio</a
             >
           </h2>
@@ -501,11 +504,11 @@
                 class="newsletter_inp"
                 type="email"
                 name="email"
-                placeholder="e-mail"
+                placeholder="E-mail"
             /></label>
             <button class="foot_sign_btn" type="submit">
               Zapisz się
-              <svg width="24" height="24">
+              <svg class="foot_sign_icon" width="24" height="24">
                 <use
                   href="https://gabri3lt.github.io/goit-markup-hw-06/images/SVG/icons.svg#icon-send"
                 ></use>
@@ -518,7 +521,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
-          <svg width="18" height="18">
+          <svg class="modal-close-icon" width="18" height="18">
             <use
               href="https://gabri3lt.github.io/goit-markup-hw-06/images/SVG/icons.svg#icon-close-black"
             ></use>
@@ -572,14 +575,15 @@
               </div>
             </div>
           </div>
-          <div class="form-terms">
+          <div class="form-group">
             <label>
               <input type="checkbox" name="check" value="check" />
-              <span
-                >Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</span
-              >
+              <span class="form-terms">Oświadczam iż akceptuję</span>
+              <a href="#" class="form-terms-link">Regulamin</a> i
+              <a href="#" class="form-terms-link">Politykę Prywatności.</a>
             </label>
           </div>
+          <button class="form-btn" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
