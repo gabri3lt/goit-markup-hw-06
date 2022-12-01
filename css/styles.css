@@ -870,8 +870,6 @@ h1 {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  /* transition: border-color 250ms ease;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .form-comment::placeholder {
@@ -976,6 +974,8 @@ h1 {
   border: 1px solid var(--color2);
   left: -11px;
   bottom: 5px;
+  transition: background-color 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-check-box input:checked ~ .form-checkmark {
