@@ -824,16 +824,21 @@ h1 {
   border-radius: 4px;
   padding-left: 40px;
   outline: none;
+  transition: border-color 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-icon {
   position: absolute;
   left: 17px;
   bottom: 15px;
+  transition: fill 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-inner-area {
   position: relative;
+  border: unset;
 }
 
 .form-area-title {
@@ -865,6 +870,8 @@ h1 {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
+  /* transition: border-color 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .form-comment::placeholder {
@@ -914,16 +921,13 @@ h1 {
   border: unset;
 }
 
-.form-inner-area:hover {
+.form-inp:hover {
   fill: var(--color4);
-  border: 1px solid var(--color4);
-  border-radius: 4px;
 }
 
-.form-inner-area:focus {
+.form-inp:hover {
   border: 1px solid var(--color4);
   border-radius: 4px;
-  outline: none;
 }
 
 .form-inp:focus {
@@ -932,8 +936,17 @@ h1 {
   outline: none;
 }
 
+.form-inp:hover + .form-icon {
+  fill: var(--color4);
+}
+
 .form-inp:focus + .form-icon {
   fill: var(--color4);
+}
+
+.form-comment:hover {
+  border: 1px solid var(--color4);
+  border-radius: 4px;
 }
 
 .form-comment:focus {
@@ -979,7 +992,7 @@ h1 {
 .checkmark-icon {
   position: absolute;
   z-index: 4;
-  bottom: 10px;
-  left: -8px;
+  bottom: 7px;
+  left: -9px;
   opacity: 0;
 }
